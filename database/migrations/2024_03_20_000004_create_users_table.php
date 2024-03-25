@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('numero_permis', 15)->unique();
             $table->date('date_permis');
             $table->string('pays_permis', 100);
-            $table->string('image', 100)->nullable();
+            $table->string('image', 100)->default('default.jpg');
 
 
             $table->timestamps();
